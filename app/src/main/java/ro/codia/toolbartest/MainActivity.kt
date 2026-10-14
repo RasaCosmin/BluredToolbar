@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import ro.codia.toolbartest.ui.theme.ToolbarTestTheme
+import ro.codia.toolbartest.v2.AppNavigationV2
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ToolbarTestTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AppNavigation()
+                    AppNavigationV2()   // v1: AppNavigation()
                 }
             }
         }
